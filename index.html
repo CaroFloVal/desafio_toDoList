@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To do list</title>
+    <!-- css -->
+     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>To do list</h1>
+        <div class="search">
+            <form>
+                <input type="text" id="nuevaTarea" placeholder="agregar tarea...">
+                <button class="btn-add">Agregar</button>
+            </form>    
+        </div>
+        <div class="li-container">
+            <h3>Lista de tareas:</h3>
+            <ul id="listaTareas">
+            
+            </ul>
+        </div>
+        <div class="contador">
+            <p>Total de tareas: <span id="totalTareas">0</span></p>
+            <p>Tareas realizadas: <span id="tareasRealizadas">0</span></p>
+        </div>
+    </div>
+    <script src="./assets/js/datos.js"></script>
 </body>
 </html>
